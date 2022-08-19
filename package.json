@@ -11,7 +11,7 @@
     "prepare": "husky install",
     "test": "jest src --passWithNoTests",
     "test-watch": "jest src --watchAll",
-    "test-coverage": "react-scripts test --coverage --watchAll=false"
+    "test-coverage": "jest src --coverage --watchAll=false --passWithNoTests"
   },
   "keywords": [],
   "author": "",
