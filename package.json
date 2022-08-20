@@ -9,9 +9,9 @@
     "start": "node .",
     "start:dev": "nodemon -q",
     "prepare": "husky install",
-    "test": "jest src --passWithNoTests",
+    "test": "cross-env NODE_ENV=test jest src --watchAll",
     "test-watch": "jest src --watchAll",
-    "test-coverage": "jest src --coverage --watchAll=false --passWithNoTests"
+    "test-coverage": "jest src --coverage --watchAll=false"
   },
   "keywords": [],
   "author": "",
@@ -46,6 +46,7 @@
     "bcryptjs": "^2.4.3",
     "chalk": "^4.1.2",
     "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
     "debug": "^4.3.4",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
