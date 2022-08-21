@@ -6,13 +6,13 @@ import usersRouter from "../routers/usersRouter";
 const app = express();
 app.disable("x-powered-by");
 
-const corsOptions = {
+/* const corsOptions = {
   origin: "*",
   credentials: true,
   optionSuccessStatus: 200,
-};
+}; */
 
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(morgan("dev"));
 app.use(express.json());
 
