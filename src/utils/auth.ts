@@ -13,3 +13,6 @@ export const hashCreator = (text: string) => {
 
 export const hashCompare = (text: string, hash: string) =>
   bcrypt.compare(text, hash);
+
+export const verifyToken = (token: string) =>
+  jwt.verify(token, process.env.SECRET);
